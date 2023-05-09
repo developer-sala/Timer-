@@ -1,0 +1,124 @@
+/* 공통 */
+.a11y-hidden {
+  clip: rect(1px, 1px, 1px, 1px);
+  clip-path: inset(50%);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+}
+
+body {
+  background: rgb(216, 225, 242);
+  background: linear-gradient(
+    90deg,
+    rgba(216, 225, 242, 1) 23%,
+    rgba(100, 147, 203, 1) 100%
+  );
+}
+
+/* section timer */
+.timer {
+  background: linear-gradient(144.07deg, #5572bb 2.13%, #374b7c 102.97%);
+  width: 400px;
+  height: 360px;
+  border-radius: 16px;
+}
+
+h2 {
+  color: white;
+  text-align: center;
+  padding-top: 48px;
+  font-size: 24px;
+}
+
+h2::after {
+  content: '';
+  display: block;
+  width: 312px;
+  height: 1px;
+  background-color: rgba(61, 83, 138, 1);
+  top: 20px;
+  left: 100px;
+  margin-top: 23px;
+  margin-left: 44px;
+}
+
+.timer-wrap {
+  display: flex;
+  justify-content: center;
+  gap: 22px;
+  margin-top: 33px;
+}
+
+span {
+  color: #a5b6ee;
+  text-align: center;
+  font-size: 12px;
+  margin-bottom: 4px;
+}
+
+.hrs-box,
+.min-box,
+.sec-box {
+  width: 80px;
+  height: 80px;
+  border-radius: 4px;
+  background: linear-gradient(314.28deg, #304577 0%, #4c65a0 83%),
+    linear-gradient(0deg, #354971, #354971);
+  color: white;
+  font-size: 40px;
+  font-weight: 700;
+  text-align: center;
+  line-height: 80px;
+  border: 1px solid #354971;
+}
+
+.time-table {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+/* section buttons */
+
+button {
+  border: none;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+.buttons {
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+}
+
+.start-btn {
+  width: 112px;
+  height: 48px;
+  border-radius: 50px;
+  color: white;
+  font-weight: 700;
+  background: url('img/icon-start.svg') no-repeat;
+  background-position: 20px;
+  background-color: #5180ff;
+  padding-left: 20px;
+}
+
+.reset-btn {
+  width: 112px;
+  height: 48px;
+  border-radius: 50px;
+  color: white;
+  font-weight: 700;
+  background: url('img/icon-reset.svg') no-repeat;
+  background-color: #fb7099;
+  background-position: 20px;
+  padding-left: 20px;
+}
